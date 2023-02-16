@@ -24,7 +24,6 @@
 
         body{
             font-family: 'Quicksand', sans-serif;
-            
         }
 
         .my-order{
@@ -36,6 +35,7 @@
         .title{
             font-size: var(--lg);
             margin-bottom: 40px;
+            border-bottom: 3px solid var(--text-input-field);
         }
 
         .mi-order-container{
@@ -84,11 +84,29 @@
             margin-bottom: 40px;
         }
 
+        .add-cart{
+            margin-top: 30px;
+            margin-bottom: 15px;
+            height: 40px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--hospital-green);
+            color: var(--text-input-field);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            
+        }
+
 
         .order-two{
             display: flex;
             justify-content: end;
             padding: 10px 10px 0 0;
+            font-weight: bold;
+            margin-top: 5px;
+           
             
         }
 
@@ -111,6 +129,35 @@
             font-weight: bold;
         }
 
+        .add-cart-info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu{
+            display: none;
+        }
+
+        @media(max-width: 370px){
+            .menu{
+
+                display: block;
+                position: absolute;
+                top: 25px;
+                left: 20px;
+                margin-left: 20px;
+
+            }
+
+            .title{
+                margin-left: 100px;
+            }
+
+        
+            
+        }
+
         
 
         
@@ -119,61 +166,69 @@
 <body>
     <div class="my-order">
         <div class="mi-order-container">
-         <h1 class="title">My order</h1>
-            <div class="shopping">
+        <img src="../icons/icon_menu.svg" alt="Menu" class="menu">
+         <h1 class="title">Shooping cart</h1>
+
+             <div class="card">
+                <figure>
+                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
+                </figure>
+                <p>Maquillaje</p>
+                <p>$200.00</p>
+                <img src="../icons/icon_close.png" alt="Close" class="close">
+             </div>
+
+             <div class="card">
+                <figure>
+                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
+                </figure>
+                <p>Maquillaje</p>
+                <p>$200.00</p>
+                <img src="../icons/icon_close.png" alt="Close" class="close">
+             </div>
+
+
+             <div class="card">
+                <figure>
+                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
+                </figure>
+                <p>Maquillaje</p>
+                <p>$200.00</p>
+                <img src="../icons/icon_close.png" alt="Close" class="close">
+             </div>
+
+
+             <div class="card">
+                <figure>
+                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
+                </figure>
+                <p>Maquillaje</p>
+                <p>$200.00</p>
+                <img src="../icons/icon_close.png" alt="Close" class="close">
+             </div>
+
+             <div class="card">
+                <figure>
+                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
+                </figure>
+                <p>Maquillaje</p>
+                <p>$200.00</p>
+                <img src="../icons/icon_close.png" alt="Close" class="close">
+             </div>
+
+             <div class="shopping">
                 <p class="order">
-                    <span>03.25.2022</span>
-                    <span>6 articules</span>
+                    <span>Total</span>
+                   
                   
                 </p>
                    <p class="order-two">$560.00</p>
             </div>
-        
 
-             <div class="card">
-                <figure>
-                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
-                </figure>
-                <p>Maquillaje</p>
-                <p>$200.00</p>
-             </div>
-
-             <div class="card">
-                <figure>
-                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
-                </figure>
-                <p>Maquillaje</p>
-                <p>$200.00</p>
-             </div>
-
-
-             <div class="card">
-                <figure>
-                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
-                </figure>
-                <p>Maquillaje</p>
-                <p>$200.00</p>
-             </div>
-
-
-             <div class="card">
-                <figure>
-                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
-                </figure>
-                <p>Maquillaje</p>
-                <p>$200.00</p>
-             </div>
-
-             <div class="card">
-                <figure>
-                    <img src="../imagenes/pexels-jhong-pascua-3018845.jpg" alt="maquillaje">
-                </figure>
-                <p>Maquillaje</p>
-                <p>$200.00</p>
-             </div>
+            <button class="add-cart  add-cart-info">Checkout</button>
 
         </div>
-         
+        
     </div>
 </body>
 </html>
